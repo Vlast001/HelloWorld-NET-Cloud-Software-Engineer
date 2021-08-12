@@ -23,6 +23,7 @@ jobs:
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: '5.x' # Check for latest at link below
+      - run: ls    
       - run: dotnet build
       - run: dotnet run 
 
