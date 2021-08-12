@@ -26,6 +26,7 @@ jobs:
       - run: ls
       - run: pwd
       - run: cd MyConsoleApp/
+      - run: cd /home/runner/work/HelloWorld-NET-Cloud-Software-Engineer/HelloWorld-NET-Cloud-Software-Engineer/MyConsoleApp
       - run: ls
       - run: dotnet build
       - run: dotnet run 
