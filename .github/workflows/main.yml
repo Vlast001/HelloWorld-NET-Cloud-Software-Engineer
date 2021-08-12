@@ -24,6 +24,7 @@ jobs:
         with:
           dotnet-version: '5.x' # Check for latest at link below
       - run: ls
+      - run: pwd
       - run: cd MyConsoleApp/
       - run: ls
       - run: dotnet build
