@@ -26,7 +26,11 @@ jobs:
       - run: ls
       - run: cd MyConsoleApp
       - run: ls
-      - run: dotnet restore MyConsoleApp.sln
+      - run: |
+            ls
+            cd MyConsoleApp
+            ls
+      # - run: dotnet restore MyConsoleApp.sln
       #- run: dotnet restore MyConsoleApp.sln < missed
       - run: dotnet build
       - run: dotnet run 
