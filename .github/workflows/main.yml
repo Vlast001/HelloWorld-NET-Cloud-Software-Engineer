@@ -27,13 +27,18 @@ jobs:
       - run: cd MyConsoleApp
       - run: ls
       - run: |
+            echo 'First directory'
             ls
             cd MyConsoleApp
+            echo 'Project Directory'
             ls
+            echo 'Start dotnet'
+            dotnet build
+            dotnet run
       # - run: dotnet restore MyConsoleApp.sln
       #- run: dotnet restore MyConsoleApp.sln < missed
-      - run: dotnet build
-      - run: dotnet run 
+      #- run: dotnet build
+      #- run: dotnet run 
 
 
 
